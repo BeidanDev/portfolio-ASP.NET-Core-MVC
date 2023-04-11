@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Proyecto>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @if (Model is not null)
+    {
+        <div class="text-center" style="padding-top: 6rem;">
+            <h1>Mis trabajos recientes</h1>
+            <p>Aquí puedes ver algunos de mis trabajos más recientes</p>
+        </div>
+
+        <partial name="_ListadoProyectos" model="Model" />
+    }
+}
